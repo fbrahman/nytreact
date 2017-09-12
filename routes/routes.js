@@ -12,9 +12,9 @@ router.get('/test', (req, res)=>{
 })
 
 router.get("*", function(req, res) {
-    console.log("in * route");
-    res.send("hello world inside route");
-  // res.sendFile(path.join(__dirname, "../public/index.html"));
+    // console.log("in * route");
+    // res.send("hello world inside route");
+  res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
 module.exports = router;
